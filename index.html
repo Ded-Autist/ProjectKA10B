@@ -3,66 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Проект КА!0Б.</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #50b3a2;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <h1>Проект КА!0Б.</h1>
+                <h1 class="logo">Проект КА!0Б.</h1>
             </div>
             <nav>
                 <ul>
@@ -72,18 +22,75 @@
             </nav>
         </div>
     </header>
-    <div class="container">
-        <h1>Добро пожаловать</h1>
-        <h2>Приветствуем вас на сайте Проект КА!0Б. Здесь вы получите необходимую информацию для начала заработка в интернете, используя своё творчество!</h2>
-        <h3>В этом разделе вы можете выбрать одну из четырёх следующих категорий творчества, в которых вы собираетесь работать, чтобы вы могли определить какую программу вы хотите использовать:</h3>
-        <li><a href="fanta_programs.html">Программы для рисования.</a></li>
-        <li><a href="fanta_programs_1.html">Программы для композиторства.</a></li>
-        <li><a href="fanta_programs_2.html">Программы для писательства.</a></li>
-        <li><a href="fanta_programs_3.html">Программы для видео-аудио контента.</a></li>
-        <h3>Здесь же вы можете узнать о том, какие виды заработка в интернете, с помощью своего творчества, существуют и больше о них самих:</h3>
-        <li><a href="fanta_sale.html">Фриланс.</a></li>
-        <li><a href="fanta_sale_1.html">Продажа продукта творчества в интернете (Онлай-магазины).</a></li>
-        <li><a href="fanta_sale_2.html">Монетизация.</a></li>
-    </div>
+    
+    <main class="container">
+        <section class="intro">
+            <h1 class="title">Добро пожаловать</h1>
+            <p class="subtitle">Приветствуем вас на сайте Проект КА!0Б. Здесь вы получите необходимую информацию для начала заработка в интернете, используя своё творчество!</p>
+        </section>
+        
+        <section class="categories">
+            <h2 class="section-title">Выберите категорию творчества</h2>
+            <div class="category-grid">
+                <a href="fanta_programs.html" class="category">
+                    <img src="pict/paint-brush.png" width="1000" height="550 alt="Рисование">
+                    <h3>Программы для рисования</h3>
+                </a>
+                <a href="fanta_programs_1.html" class="category">
+                    <img src="pict/music-notes.jpg" alt="Композиторство">
+                    <h3>Программы для композиторства</h3>
+                </a>
+                <a href="fanta_programs_2.html" class="category">
+                    <img src="pict/pen.jpg" alt="Писательство">
+                    <h3>Программы для писательства</h3>
+                </a>
+                <a href="fanta_programs_3.html" class="category">
+                    <img src="pict/video-camera.png" alt="Видео-аудио контент">
+                    <h3>Программы для видео-аудио контента</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="earning-methods">
+            <h2 class="section-title">Узнайте о видах заработка</h2>
+            <div class="earning-grid">
+                <a href="fanta_sale.html" class="earning">
+                    <img src="pict/hand-work.png" alt="Фриланс">
+                    <h3>Фриланс</h3>
+                </a>
+                <a href="fanta_sale_1.html" class="earning">
+                    <img src="pict/online-shop.png" alt="Продажа продукта творчества">
+                    <h3>Продажа продукта творчества в интернете</h3>
+                </a>
+                <a href="fanta_sale_2.html" class="earning">
+                    <img src="pict/money-bag.png" alt="Монетизация">
+                    <h3>Монетизация</h3>
+                </a>
+            </div>
+        </section>
+        
+        <section class="earning-methods">
+            <h2 class="section-title">Рекомендации для продвижения своего продукта творчества</h2>
+            <div class="earning-grid">
+                <a href="fanta_sale.html#1" class="earning">
+                    <h3>Рекомендации для продвижении во фрилансе</h3>
+                </a>
+                <a href="fanta_sale_1.html#2" class="earning">
+                    <h3>Рекомендации для продвижении своего товара в онлайн-магазинах</h3>
+                </a>
+                <a href="fanta_sale_2.html#3" class="earning">
+                    <h3>Советы по монетизации</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Проект КА!0Б.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
